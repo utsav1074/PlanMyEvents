@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Admin Navbar */
+.admin-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.admin-navbar .brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.admin-navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.admin-navbar .nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #2c3e50;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.admin-navbar .nav-links a:hover {
+  background-color: #f0f0f0;
+  color: #2980b9;
+}
+
+.admin-navbar .nav-links a.active {
+  background-color: #2980b9;
+  color: white;
+}
+
+/* Content */
+.admin-content {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+button.delete {
+  background-color: #e74c3c;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+
+/* Summary Table */
+.summary-table-container {
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #3498db;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #3498db;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.summary-table th,
+.summary-table td {
+  background-color: #3498db;
+  padding: 12px 16px;
+  font-weight: bold;
+  border: 1px solid white;
+}
